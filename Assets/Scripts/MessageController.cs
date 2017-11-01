@@ -9,7 +9,11 @@ public class MessageController : MonoBehaviour {
 	[ SerializeField ]
 	private Button[] _selectionButtons = new Button[ 3 ];
 	[ SerializeField ]
+	private Transform _messageThread;
+	[ SerializeField ]
 	private ChirpEvent[] _events;
+	[ SerializeField ]
+	private GameObject _messagePrefab;
 
 
 	// Private variables
@@ -30,7 +34,10 @@ public class MessageController : MonoBehaviour {
 
 	// TODO: Code for adding a message when a button is clicked
 	public void SelectMessage( int index ) {
-		print( _currentEvent.Options[ index ].FullText );
+		GameObject m = Instantiate( _messagePrefab, _messageThread );
+		m.GetComponentInChildren< Text >().text = _currentEvent.Options[ index ].FullText;
+
+		// TODO: Scroll to bottom when new message is added
 	}
 
 
