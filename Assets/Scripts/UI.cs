@@ -9,6 +9,9 @@ public class UI : MonoBehaviour {
     public GameObject twitterCanvas;
     public GameObject snapchatCanvas;
     public GameObject startCanvas;
+    public GameObject selfieCam;
+    public GameObject mainCam;
+    public GameObject body;
 
     // Use this for initialization
     void Start () {
@@ -17,6 +20,10 @@ public class UI : MonoBehaviour {
         snapchatCanvas.SetActive(false);
         mainCanvas.SetActive(false);
         twitterCanvas.SetActive(false);
+
+        //Set up Cameras
+        mainCam.SetActive(true);
+        selfieCam.SetActive(false);
 
     }
 	
@@ -40,6 +47,10 @@ public class UI : MonoBehaviour {
         snapchatCanvas.SetActive(false);
         mainCanvas.SetActive(false);
         startCanvas.SetActive(false);
+
+        //Change to main camera
+        mainCam.SetActive(true);
+        selfieCam.SetActive(false);
     }
 
     void OpenSnapchat() {
@@ -49,6 +60,12 @@ public class UI : MonoBehaviour {
         twitterCanvas.SetActive(false);
         mainCanvas.SetActive(false);
         startCanvas.SetActive(false);
+
+        //Change to selfie camera
+        mainCam.SetActive(false);
+        selfieCam.SetActive(true);
+
+        //if(body.Renderer.isVisible)
     }
 
     void OpenMain() {
@@ -58,5 +75,9 @@ public class UI : MonoBehaviour {
         twitterCanvas.SetActive(false);
         snapchatCanvas.SetActive(false);
         startCanvas.SetActive(false);
+
+        //Change to main camera
+        mainCam.SetActive(true);
+        selfieCam.SetActive(false);
     }
 }
