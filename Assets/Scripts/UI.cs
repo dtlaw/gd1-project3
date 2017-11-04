@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UI : MonoBehaviour {
 
@@ -9,9 +10,15 @@ public class UI : MonoBehaviour {
     public GameObject twitterCanvas;
     public GameObject snapchatCanvas;
     public GameObject startCanvas;
+    //Find Cameras
     public GameObject selfieCam;
     public GameObject mainCam;
-    public GameObject body;
+    //Find other objects
+    public UnityEngine.UI.Text timer;
+    //Create timer
+    private float timeLeft = 90.0f;
+    //Check selfie cam
+    private bool isMainCam;
 
     // Use this for initialization
     void Start () {
@@ -24,24 +31,37 @@ public class UI : MonoBehaviour {
         //Set up Cameras
         mainCam.SetActive(true);
         selfieCam.SetActive(false);
+        isMainCam = true;
 
     }
 	
 	// Update is called once per frame
 	void Update () {
+        //Change Screen Modes
 		if (Input.GetKeyDown("t")) {
             OpenTwitter();
         }
         if (Input.GetKeyDown("c")) {
             OpenSnapchat();
         }
-        if (Input.GetKeyDown("m")) {
+        if (Input.GetKeyDown("return")) {
             OpenMain();
         }
+        //Update Timer
+        timeLeft -= Time.deltaTime;
+        timer.text = ("Time left " + timeLeft.ToString("f0"));
+        if (timeLeft <= 0) {
+            EndGame();
+        }
+        //Take photo
+        if (Input.GetKeyDown("space") && isMainCam == false) {
+            //Application.CaptureScreenshot("Screenshot.png");
+            //Application.CaptureScreenshot("Screenshot.png");
+        }
+        
 	}
 
     void OpenTwitter() {
-        print ("twitter");
         //Make twitter canvas visible and other canvases invisible
         twitterCanvas.SetActive(true);
         snapchatCanvas.SetActive(false);
@@ -51,10 +71,10 @@ public class UI : MonoBehaviour {
         //Change to main camera
         mainCam.SetActive(true);
         selfieCam.SetActive(false);
+        isMainCam = true;
     }
 
     void OpenSnapchat() {
-        print("snapchat");
         //Make snapchat canvas visible and other canvases invisible
         snapchatCanvas.SetActive(true);
         twitterCanvas.SetActive(false);
@@ -64,12 +84,12 @@ public class UI : MonoBehaviour {
         //Change to selfie camera
         mainCam.SetActive(false);
         selfieCam.SetActive(true);
+        isMainCam = false;
 
         //if(body.Renderer.isVisible)
     }
 
     void OpenMain() {
-        print("main");
         //Make snapchat canvas visible and other canvases invisible
         mainCanvas.SetActive(true);
         twitterCanvas.SetActive(false);
@@ -79,5 +99,10 @@ public class UI : MonoBehaviour {
         //Change to main camera
         mainCam.SetActive(true);
         selfieCam.SetActive(false);
+        isMainCam = true;
+    }
+
+    void EndGame() {
+        //You ran out of time 
     }
 }
