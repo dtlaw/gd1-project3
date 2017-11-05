@@ -167,6 +167,10 @@ Prefab:
       propertyPath: m_Name
       value: 10.30_Everything Else (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a827c7bd4f446f54882d0e4c2dfeede1, type: 3}
+      propertyPath: m_TagString
+      value: Furniture
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a827c7bd4f446f54882d0e4c2dfeede1, type: 3}
   m_IsPrefabParent: 0
@@ -310,6 +314,10 @@ Prefab:
     - target: {fileID: 400012, guid: 2c185b1473feffb4482fd61aa3f7b669, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2c185b1473feffb4482fd61aa3f7b669, type: 3}
+      propertyPath: m_TagString
+      value: Furniture
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c185b1473feffb4482fd61aa3f7b669, type: 3}
@@ -565,6 +573,10 @@ Prefab:
     - target: {fileID: 400000, guid: a827c7bd4f446f54882d0e4c2dfeede1, type: 3}
       propertyPath: m_LocalScale.z
       value: 150.25919
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a827c7bd4f446f54882d0e4c2dfeede1, type: 3}
+      propertyPath: m_TagString
+      value: Furniture
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a827c7bd4f446f54882d0e4c2dfeede1, type: 3}
@@ -942,6 +954,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 33.580414
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2a1c40c2518e5bb4c9ab3d1040d99003, type: 3}
+      propertyPath: m_TagString
+      value: Furniture
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2a1c40c2518e5bb4c9ab3d1040d99003, type: 3}
   m_IsPrefabParent: 0
@@ -971,13 +987,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 923728577}
-  m_LocalRotation: {x: 0.048649486, y: 0.62633365, z: -0.039213613, w: 0.7770468}
-  m_LocalPosition: {x: -3.54, y: 2, z: -1.4268616}
+  m_LocalRotation: {x: 0.13771482, y: 0.6176647, z: -0.111004174, w: 0.7662918}
+  m_LocalPosition: {x: -2.63, y: 1.98, z: -1.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1717876455}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 7.1650004, y: 77.741005, z: 0}
+  m_LocalEulerAnglesHint: {x: 20.376001, y: 77.741005, z: 0}
 --- !u!81 &923728579
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1093,6 +1109,40 @@ MeshCollider:
   m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 0}
+--- !u!23 &1069993399
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1069993396}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
 --- !u!224 &1213873587 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22400004, guid: 05a81c3d5091440058129444d28322f3,
@@ -1707,6 +1757,10 @@ Prefab:
       propertyPath: m_Name
       value: 10.30_Everything Else (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a827c7bd4f446f54882d0e4c2dfeede1, type: 3}
+      propertyPath: m_TagString
+      value: Furniture
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a827c7bd4f446f54882d0e4c2dfeede1, type: 3}
   m_IsPrefabParent: 0
@@ -1764,7 +1818,7 @@ GameObject:
   - component: {fileID: 2000226979}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: MainCamera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1892,6 +1946,10 @@ Prefab:
     - target: {fileID: 100000, guid: a827c7bd4f446f54882d0e4c2dfeede1, type: 3}
       propertyPath: m_Name
       value: 10.30_Everything Else (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a827c7bd4f446f54882d0e4c2dfeede1, type: 3}
+      propertyPath: m_TagString
+      value: Furniture
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a827c7bd4f446f54882d0e4c2dfeede1, type: 3}

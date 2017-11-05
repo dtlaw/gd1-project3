@@ -25,20 +25,44 @@ public class TakePhotos:MonoBehaviour {
     }
 
     public int SelfieScore() {
-        int score;
-        score = 10;
+        //if (!bath.GetComponent<Renderer>().isVisible) {
+        // print("NO____________________");
+        //} else {
+        // print("________________YES");
+        //}
         //Camera.OnWillRenderObject()
         //selfieCam.camera.on
         //bath.renderer.
-        Vector3 forward = transform.TransformDirection(Vector3.forward);
-        if (Physics.Raycast(transform.position, forward, 10)) {
-            print ("visible");
+
+        Ray photoLine = new Ray();
+        RaycastHit hit = new RaycastHit();
+        photoLine.origin = transform.position;
+        photoLine.direction = Vector3.forward;
+
+        int score;
+        score = 10;
+
+        Vector3 forward = transform.TransformDirection(Vector3.forward) * 10;
+        Debug.DrawRay(transform.position, forward, Color.blue, 0, false);
+        //if (Physics.Raycast(transform.position, forward, 100) && inPhoto.transform.tag == "Furniture" ) {
+        //if (Physics.Raycast(photoLine, out inPhoto) && inPhoto.transform.tag == "Furniture") { 
+        print("running");
+        if (Physics.Raycast(transform.position, transform.forward, out hit, 10f)) { 
+            print ("raycast");
+            if(hit.transform != null) {
+                print("object -- " + hit.transform.tag);
+            }
+        } else {
+            //print("not raycast");
         }
+        //Debug.DrawRay(photoLine, Color.cyan);
         return score;
     }
 
     void LateUpdate() {
         takeHiResShot |= Input.GetKeyDown("k");
+        //Get Score of photo
+        SelfieScore();
 
         if (takeHiResShot) {
             RenderTexture rt = new RenderTexture(resWidth, resHeight, 24);
