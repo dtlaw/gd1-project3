@@ -1,17 +1,28 @@
-Tweet 1- so, what kind of date you have planned
-
-#visit #restaurant #hotel
-
-#visit She's coming over to my apartment, 
-
-Tweet 2- 
-
 Picture 1- (Objective- Convince people you have a table prepared)
 
-Picture 2- (Objective- not sure yet)
+Picture 2- (Objective- Selfie)
 
-Text 1 (for alternate idea)- Hey, work's going to be done in about an hour. Everything ready?
+Picture 3- (Objective- Anything, just make it romantic?)
 
-Text 2 (for alternate idea)-
+Text 1 (for alternate idea)- Hey, work's going to be done soon, so I'll be there in about an hour. Everything ready?
 
-Note- currently writer's blocking on this, will add to when I'm not writer's blocking
+#ready- Yep, should be good to go pretty soon.
+Response- Alright, cool, I'll be there as soon as I can. [Subtracts time or keeps time the same?]
+#busy- Bit busy right now, I'll let you know when things are good.
+Response- That's fine, just keep me up to date. [Keeps time the same or adds time?]
+#trouble- Some stuff came up suddenly, could you give me a bit?
+Response- Alright then, I'll need to get ready too. Keep me up to date though, alright?
+You- I will. [Adds time?]
+
+#ignore- (Better just stall a bit...)
+Response- Hello? Everything alright? [Subtracts time]
+
+Text 2 (for alternate idea)- I'll be pulling up in a few minutes, just wanted to check if the reservation's set up?
+
+#delayed- They had to push it back a bit, but not too much.
+Response- Alright, we'll just hang out in the room for a bit. I'll come up. [Keeps time the same or adds time?]
+#ontime- Yeah, it'll be on time, I double checked.
+Response- Cool, could you meet me down here then? I'll just be a few minutes. [Subtracts time]
+
+#ignore- (I don't need to answer, do I...?)
+Response- Everything alright? Hello? [Subtracts time]
