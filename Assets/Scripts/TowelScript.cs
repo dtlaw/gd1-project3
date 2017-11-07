@@ -17,22 +17,25 @@ public class TowelScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (_held && !_keyDropped)
         {
             // drop key animations
             _keyDropped = true;
-            Debug.Log("CLINK key drop");
+            //Debug.Log("CLINK key drop");
         }
+        */
+        _distance = Vector3.Distance(playerCam.transform.position, this.transform.position);
     }
 
     void OnMouseDown()
     {
-        _distance = Vector3.Distance(playerCam.transform.position, this.transform.position);
+        //_distance = Vector3.Distance(playerCam.transform.position, this.transform.position);
         if (_distance < 1.0)
         {
             GetComponent<Rigidbody>().useGravity = false;
             this.transform.position = playerCam.position;
-            this.transform.parent = GameObject.Find("FPSController").transform;
+            //this.transform.parent = GameObject.Find("FPSController").transform;
             this.transform.parent = GameObject.Find("FirstPersonCharacter").transform;
 
             GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionY;
@@ -44,7 +47,7 @@ public class TowelScript : MonoBehaviour
         }
         else
         {
-            Debug.Log("***" + _distance);
+            //Debug.Log("***" + _distance);
         }
     }
 
