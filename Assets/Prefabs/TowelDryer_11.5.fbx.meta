@@ -1,0 +1,224 @@
+fileFormatVersion: 2
+guid: cbe477891c634ed4ea8d277c392b5f38
+timeCreated: 1510065551
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Bogema_015
+    100002: Bogema_016
+    100004: Bogema_017
+    100006: Bogema_018
+    100008: Bogema_collector_022
+    100010: Bogema_collector_022_MeshPart0
+    100012: Bogema_collector_022_MeshPart1
+    100014: Bogema_collector_022_MeshPart2
+    100016: Bogema_collector_022_MeshPart3
+    100018: Bogema_collector_022_MeshPart4
+    100020: Bogema_collector_022_MeshPart5
+    100022: Bogema_collector_022_MeshPart6
+    100024: Bogema_collector_022_MeshPart7
+    100026: Circle298
+    100028: Circle299
+    100030: Circle300
+    100032: Circle301
+    100034: Circle302
+    100036: Circle303
+    100038: Circle304
+    100040: Circle305
+    100042: Element_holder_385
+    100044: Element_holder_386
+    100046: Element_holder_387
+    100048: Element_holder_388
+    100050: Element_holder_389
+    100052: Element_holder_390
+    100054: //RootNode
+    400000: Bogema_015
+    400002: Bogema_016
+    400004: Bogema_017
+    400006: Bogema_018
+    400008: Bogema_collector_022
+    400010: Bogema_collector_022_MeshPart0
+    400012: Bogema_collector_022_MeshPart1
+    400014: Bogema_collector_022_MeshPart2
+    400016: Bogema_collector_022_MeshPart3
+    400018: Bogema_collector_022_MeshPart4
+    400020: Bogema_collector_022_MeshPart5
+    400022: Bogema_collector_022_MeshPart6
+    400024: Bogema_collector_022_MeshPart7
+    400026: Circle298
+    400028: Circle299
+    400030: Circle300
+    400032: Circle301
+    400034: Circle302
+    400036: Circle303
+    400038: Circle304
+    400040: Circle305
+    400042: Element_holder_385
+    400044: Element_holder_386
+    400046: Element_holder_387
+    400048: Element_holder_388
+    400050: Element_holder_389
+    400052: Element_holder_390
+    400054: //RootNode
+    2300000: Bogema_015
+    2300002: Bogema_016
+    2300004: Bogema_017
+    2300006: Bogema_018
+    2300008: Bogema_collector_022_MeshPart0
+    2300010: Bogema_collector_022_MeshPart1
+    2300012: Bogema_collector_022_MeshPart2
+    2300014: Bogema_collector_022_MeshPart3
+    2300016: Bogema_collector_022_MeshPart4
+    2300018: Bogema_collector_022_MeshPart5
+    2300020: Bogema_collector_022_MeshPart6
+    2300022: Bogema_collector_022_MeshPart7
+    2300024: Circle298
+    2300026: Circle299
+    2300028: Circle300
+    2300030: Circle301
+    2300032: Circle302
+    2300034: Circle303
+    2300036: Circle304
+    2300038: Circle305
+    2300040: Element_holder_385
+    2300042: Element_holder_386
+    2300044: Element_holder_387
+    2300046: Element_holder_388
+    2300048: Element_holder_389
+    2300050: Element_holder_390
+    3300000: Bogema_015
+    3300002: Bogema_016
+    3300004: Bogema_017
+    3300006: Bogema_018
+    3300008: Bogema_collector_022_MeshPart0
+    3300010: Bogema_collector_022_MeshPart1
+    3300012: Bogema_collector_022_MeshPart2
+    3300014: Bogema_collector_022_MeshPart3
+    3300016: Bogema_collector_022_MeshPart4
+    3300018: Bogema_collector_022_MeshPart5
+    3300020: Bogema_collector_022_MeshPart6
+    3300022: Bogema_collector_022_MeshPart7
+    3300024: Circle298
+    3300026: Circle299
+    3300028: Circle300
+    3300030: Circle301
+    3300032: Circle302
+    3300034: Circle303
+    3300036: Circle304
+    3300038: Circle305
+    3300040: Element_holder_385
+    3300042: Element_holder_386
+    3300044: Element_holder_387
+    3300046: Element_holder_388
+    3300048: Element_holder_389
+    3300050: Element_holder_390
+    4300000: Bogema_collector_022_MeshPart0
+    4300002: Bogema_collector_022_MeshPart1
+    4300004: Bogema_collector_022_MeshPart2
+    4300006: Bogema_collector_022_MeshPart3
+    4300008: Bogema_collector_022_MeshPart4
+    4300010: Bogema_collector_022_MeshPart5
+    4300012: Bogema_collector_022_MeshPart6
+    4300014: Bogema_collector_022_MeshPart7
+    4300016: Bogema_018
+    4300018: Element_holder_390
+    4300020: Circle305
+    4300022: Circle304
+    4300024: Bogema_017
+    4300026: Element_holder_389
+    4300028: Circle303
+    4300030: Circle302
+    4300032: Bogema_016
+    4300034: Element_holder_388
+    4300036: Circle301
+    4300038: Circle300
+    4300040: Element_holder_387
+    4300042: Element_holder_386
+    4300044: Bogema_015
+    4300046: Element_holder_385
+    4300048: Circle299
+    4300050: Circle298
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white_ceramic
+    second: {fileID: 2100000, guid: 1a24cd80fc9a4334fb6cd066068f94d8, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
