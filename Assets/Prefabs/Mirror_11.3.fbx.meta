@@ -27,6 +27,10 @@ ModelImporter:
     4300002: Arch46_038_5
     4300004: Arch46_038_3
     4300006: Arch46_038_2
+    6400000: Arch46_038_2
+    6400002: Arch46_038_3
+    6400004: Arch46_038_4
+    6400006: Arch46_038_5
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -74,7 +78,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
