@@ -5,6 +5,7 @@ using UnityEngine;
 public class TowelScript : MonoBehaviour
 {
     public Transform playerCam;
+    public GameObject key;
 
     [SerializeField]
     private float _distance;
@@ -14,6 +15,11 @@ public class TowelScript : MonoBehaviour
     private float _y = 90.0f;
     private float _z = 0.0f;
 
+    private void Start()
+    {
+        key.SetActive(false);
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -22,13 +28,14 @@ public class TowelScript : MonoBehaviour
             // drop key animations
             _keyDropped = true;
             Debug.Log("CLINK key drop");
+            key.SetActive(true);
         }
     }
 
     void OnMouseDown()
     {
         _distance = Vector3.Distance(playerCam.transform.position, this.transform.position);
-        if (_distance < 1.0)
+        if (_distance < 1.3)
         {
             GetComponent<Rigidbody>().useGravity = false;
             this.transform.position = playerCam.position;
@@ -41,10 +48,6 @@ public class TowelScript : MonoBehaviour
 
             GetComponent<Rigidbody>().freezeRotation = true;
             _held = true;
-        }
-        else
-        {
-            Debug.Log("***" + _distance);
         }
     }
 

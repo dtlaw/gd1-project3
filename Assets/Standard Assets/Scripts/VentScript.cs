@@ -14,12 +14,6 @@ public class VentScript : MonoBehaviour
     private float _y = 90.0f;
     private float _z = 0.0f;
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     void OnMouseDown()
     {
         // make sure distance is good enough that player can't reach

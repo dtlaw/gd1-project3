@@ -9,16 +9,10 @@ public class WindowScript : MonoBehaviour
     [SerializeField]
     private float _distance;
 
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
-
     void OnMouseDown()
     {
         _distance = Vector3.Distance(playerCam.transform.position, this.transform.position);
-        if (_distance < 1.0)
+        if (_distance < 1.3)
         {
             // window animations
             // may have to limit to just one time
