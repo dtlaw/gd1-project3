@@ -9,6 +9,7 @@ public class EscapePlan : MonoBehaviour {
     public int level;
     public UnityEngine.UI.Text list;
     public Text notification;
+    public GameObject player;
 
     //Set private variables
     private string listText;
@@ -22,53 +23,46 @@ public class EscapePlan : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //Check level
+        level = player.GetComponent<Items>().level;
+
         switch (level) {
             case 0:
-                print("Try to open the door");
                 listText = ("How to escape! \n" + "◯Try the Door \n");
                 
                 break;
             case 1:
-                print("level 1");
                 notificationText = ("New Text!");
                 listText = ("How to escape! \n" + " ✔Try the Door \n" + "◯Respond to Text \n");
                 break;
             case 2:
-                print("2");
                 notificationText = ("");
                 listText = ("How to escape! \n" + " ✔Responded to Text \n" + "◯Try the Window \n");
                 break;
             case 3:
-                print("3");
                 listText = ("How to escape! \n" + " ✔Try the Window \n" + "◯Take Selfie \n");
-
                 break;
             case 4:
-                print("4");
-                listText = ("How to escape! \n" + " ✔Take Selfie \n" + "◯Try the Airvent \n");
+                listText = ("How to escape! \n" + " ✔Take Selfie \n" + "◯Use the table to get to the Airvent \n");
                 break;
             case 5:
-                print("5");
-                listText = ("How to escape! \n" + " ✔Try the window \n" + "◯Respond to Text \n");
+                listText = ("How to escape! \n" + " ✔Try the Airvent \n" + "◯Respond to Text \n");
                 break;
             case 6:
-                print("6");
-                listText = ("How to escape! \n" + " ✔Try the airvent \n" + "◯Try looking the bin \n");
+                listText = ("How to escape! \n" + " ✔Respond to Text \n" + "◯Try looking the Bin \n");
                 break;
             case 7:
-                print("6");
-                listText = ("How to escape! \n" + " ✔Try the window \n" + "◯Respond to Text \n");
+                listText = ("How to escape! \n" + " ✔Try looking in the Bin \n" + "◯Take Selfie \n");
                 break;
             case 8:
-                print("6");
-                listText = ("How to escape! \n" + " ✔Try looking in the bin \n" + "◯Try the towels \n");
+                listText = ("How to escape! \n" + " ✔ Take Selfie \n" + "◯Try the towels \n");
                 break;
             case 9:
-                print("6");
+                listText = ("How to escape! \n" + " ✔Try the towels \n" + "◯Open the door \n");
                 break;
             case 10:
-                print("6");
-                listText = ("How to escape! \n" + " ✔Try the towels \n" + "◯Open the door \n");
+                print("End of game");
+                
                 break;
         }
 
@@ -78,9 +72,9 @@ public class EscapePlan : MonoBehaviour {
     }
 
     public void CheckList () {
-        if (Input.GetKeyDown("space")) {
-            level += 1;
-        }
+        //if (Input.GetKeyDown("space")) {
+        //    level += 1;
+        //}
         //////////////
 
         if (level == 1) {

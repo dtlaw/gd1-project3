@@ -14,20 +14,13 @@ public class PinScript : MonoBehaviour
     private float _y = 90.0f;
     private float _z = 0.0f;
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     void OnMouseDown()
     {
         _distance = Vector3.Distance(playerCam.transform.position, this.transform.position);
-        if (_distance < 1.0)
+        if (_distance < 2.0)
         {
             GetComponent<Rigidbody>().useGravity = false;
             this.transform.position = playerCam.position;
-            this.transform.parent = GameObject.Find("FPSController").transform;
             this.transform.parent = GameObject.Find("FirstPersonCharacter").transform;
 
             GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionY;
@@ -35,10 +28,6 @@ public class PinScript : MonoBehaviour
             this.transform.Rotate(_x, _y, _z, Space.Self);
 
             GetComponent<Rigidbody>().freezeRotation = true;
-        }
-        else
-        {
-            Debug.Log("***" + _distance);
         }
     }
 

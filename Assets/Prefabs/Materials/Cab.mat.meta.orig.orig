@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 40400aef1c8acb94e92fb5bf8e970b28
+timeCreated: 1509856922
+licenseType: Free
+NativeFormatImporter:
+  externalObjects: {}
+=======
+guid: 5caffec1ca1003649a657a71b075fc19
+timeCreated: 1509555606
+licenseType: Free
+NativeFormatImporter:
+<<<<<<< HEAD
+>>>>>>> 390567b8b886df9835c3de9485a5514ce2e3796c
+=======
+>>>>>>> 5f8c8e481cf7dcc3a7ffc0f4d94d4d68deb8d3ae
+>>>>>>> b3f5e894d9db50e5e0e38e16844e9be10b23480a
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
