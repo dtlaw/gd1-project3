@@ -3164,6 +3164,7 @@ MonoBehaviour:
   - {fileID: 1458564479}
   - {fileID: 1466497757}
   _messageThread: {fileID: 375745540}
+  _scrollRect: {fileID: 1433836644}
   _events:
   - {fileID: 11400000, guid: 047d870630a4670408772e3abf2f2422, type: 2}
   _messagePrefab: {fileID: 1999379525398266, guid: 9db8f692f3552d84d8727e04a682c871,
@@ -3339,7 +3340,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1377240577}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 530.5679, y: 297.4757, z: 6.827438}
+  m_LocalPosition: {x: 530.5679, y: 297.47568, z: 6.827438}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1213873587}

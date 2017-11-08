@@ -11,6 +11,8 @@ public class MessageController : MonoBehaviour {
 	[ SerializeField ]
 	private Transform _messageThread;
 	[ SerializeField ]
+	private ScrollRect _scrollRect;
+	[ SerializeField ]
 	private TextEvent[] _events;
 	[ SerializeField ]
 	private GameObject _messagePrefab;
@@ -38,6 +40,7 @@ public class MessageController : MonoBehaviour {
 		// m.GetComponent< Transform >().SetSiblingIndex( 0 );
 
 		// TODO: Lerp-scroll to bottom when new message is added?
+		StartCoroutine( ScrollToBottom());
 	}
 
 
@@ -47,5 +50,10 @@ public class MessageController : MonoBehaviour {
 			_currentEvent = e;
 			_selectionButtons[ i ].GetComponentInChildren< Text >().text = e.Options[ i ].HashtagText;
 		}
+	}
+
+	private IEnumerator ScrollToBottom() {
+		yield return new WaitForEndOfFrame();
+		_scrollRect.verticalNormalizedPosition = 0;
 	}
 }
