@@ -29,7 +29,7 @@ public class TowelScript : MonoBehaviour
     void OnMouseDown()
     {
         _distance = Vector3.Distance(playerCam.transform.position, this.transform.position);
-        if (_distance < 100)
+        if (_distance < 2.5)
         {
             GetComponent<Rigidbody>().useGravity = false;
             this.transform.position = playerCam.position;

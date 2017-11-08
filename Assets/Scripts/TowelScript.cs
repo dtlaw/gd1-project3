@@ -46,10 +46,6 @@ public class TowelScript : MonoBehaviour
             GetComponent<Rigidbody>().freezeRotation = true;
             _held = true;
         }
-        else
-        {
-            Debug.Log("***" + _distance);
-        }
     }
 
     void OnMouseUp()
