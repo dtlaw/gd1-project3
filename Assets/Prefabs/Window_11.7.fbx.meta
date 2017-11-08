@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 76a4a33b1fabfd442b956c24747e4b80
-timeCreated: 1510104468
-licenseType: Free
+guid: 4e23539fcbbd07c4b9fe9e1e62c3f756
+timeCreated: 1510104145
+licenseType: Pro
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: Window
     100002: //RootNode
@@ -15,22 +15,10 @@ ModelImporter:
     3300002: //RootNode
     4300000: WindowFrame
     4300002: Window
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Glass
-    second: {fileID: 2100000, guid: bbca5872311c2ac449cb089e0f673c95, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: blue_ceramic
-    second: {fileID: 2100000, guid: 29bf5c9861a952c4b87e500d61ae49f8, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -43,7 +31,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

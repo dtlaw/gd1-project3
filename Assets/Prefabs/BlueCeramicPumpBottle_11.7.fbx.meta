@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 6dc21823c4f358342a5d7a2ebe5cb01e
-timeCreated: 1510104467
-licenseType: Free
+guid: c2c81eb53011c1d44aec6cdc3c626f50
+timeCreated: 1510104173
+licenseType: Pro
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: BlueCeramicPumpBottle1_MeshPart0
     100002: BlueCeramicPumpBottle1_MeshPart1
@@ -22,22 +22,10 @@ ModelImporter:
     4300000: BlueCeramicPumpBottle1_MeshPart0
     4300002: BlueCeramicPumpBottle1_MeshPart1
     4300004: BlueCeramicPumpBottle1_MeshPart2
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Handle
-    second: {fileID: 2100000, guid: 6f7c2529016f01d44b50d8861948fd29, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: blue_ceramic
-    second: {fileID: 2100000, guid: 29bf5c9861a952c4b87e500d61ae49f8, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -50,7 +38,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

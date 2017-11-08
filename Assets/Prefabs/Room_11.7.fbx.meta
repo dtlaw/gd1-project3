@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 7a8092f7d38fa98469904e2b3767228e
-timeCreated: 1510104468
-licenseType: Free
+guid: 2ecdaef42eb23ff4abbb151d8c09264b
+timeCreated: 1510104144
+licenseType: Pro
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: pCube1
     100002: //RootNode
@@ -12,22 +12,10 @@ ModelImporter:
     2300000: pCube1
     3300000: pCube1
     4300000: pCube1
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Wallskin
-    second: {fileID: 2100000, guid: d3424d7545884224ca8f35018f1aa70f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: blinn3
-    second: {fileID: 2100000, guid: 738d04aaa2a3c4e4a95f20ff4603e9ea, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -40,7 +28,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: fcd4ca708371074478af19fe675ae2cc
-timeCreated: 1510104529
-licenseType: Free
+guid: 88dc70868f377b64b9c25045eabd0ed3
+timeCreated: 1510104158
+licenseType: Pro
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
     100002: Rose_MeshPart0
@@ -22,22 +22,10 @@ ModelImporter:
     4300000: Rose_MeshPart0
     4300002: Rose_MeshPart1
     4300004: Rose_MeshPart2
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: phong1
-    second: {fileID: 2100000, guid: 454d495992c03364898672f885742b07, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: phongE1
-    second: {fileID: 2100000, guid: 1a13725f47ba47041bae65f86e48ede0, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -50,7 +38,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
