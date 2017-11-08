@@ -65,7 +65,7 @@ Material:
     - _Glossiness: 0
 =======
     - _Glossiness: 0.5
->>>>>>> 390567b8b886df9835c3de9485a5514ce2e3796c
+>>>>>>> 5f8c8e481cf7dcc3a7ffc0f4d94d4d68deb8d3ae
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 3
@@ -82,4 +82,4 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
 =======
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
->>>>>>> 390567b8b886df9835c3de9485a5514ce2e3796c
+>>>>>>> 5f8c8e481cf7dcc3a7ffc0f4d94d4d68deb8d3ae

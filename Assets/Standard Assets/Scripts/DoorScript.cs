@@ -16,10 +16,6 @@ public class DoorScript : MonoBehaviour {
         {
             Debug.Log("The door won't open");
         }
-        else
-        {
-            Debug.Log("***" + _distance);
-        }
     }
 
     void OnCollisionEnter(Collision c)
