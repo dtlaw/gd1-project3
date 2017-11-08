@@ -72,6 +72,7 @@ public class UI : MonoBehaviour {
         mainCam.SetActive(true);
         selfieCam.SetActive(false);
         isMainCam = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     void OpenSnapchat() {
@@ -85,8 +86,7 @@ public class UI : MonoBehaviour {
         mainCam.SetActive(false);
         selfieCam.SetActive(true);
         isMainCam = false;
-
-        //if(body.Renderer.isVisible)
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void OpenMain() {
@@ -100,6 +100,7 @@ public class UI : MonoBehaviour {
         mainCam.SetActive(true);
         selfieCam.SetActive(false);
         isMainCam = true;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void EndGame() {
