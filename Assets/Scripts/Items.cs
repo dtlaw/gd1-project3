@@ -77,6 +77,7 @@ public class Items : MonoBehaviour {
         if (Physics.Raycast(transform.position, transform.forward, out hit, 10f)) {
             //if (hit.transform != null && distance < 2f) {
             if (hit.transform != null) {
+                print("click");
                 if (hit.transform.tag == "Bath") {
                     print("HELL YEAH");
                     close = bath;
@@ -90,7 +91,7 @@ public class Items : MonoBehaviour {
                     print("this is not a cup");
                 //} else if (hit.transform.tag == "cabinet") {
                 //    close = cabinet;
-                } else if (hit.transform.tag == "door") {
+                } else if (hit.transform.tag == "Door") {
                     close = door;
                     print("door");
                 //} else if (hit.transform.tag == "floor") {
