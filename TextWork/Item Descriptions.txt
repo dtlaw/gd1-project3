@@ -1,11 +1,26 @@
 Item descriptions-
 
-Bobby pin- One of those pins for holding up hair. Also the classic fallback for when you need to pick a lock.
-Poster with a riddle on it- There's a poster here for some reason. Seems rather weird to have one in a hotel, but maybe it's to spruce it up?
-Chair- A simple chair. Looks like one of the ones from the main room, guess they forgot to put it back in there.
-Shower curtains- Some cheap shower curtains on one of those extending rods. Nice and monochrome.
-Towels- A set of nice, white towels. They feel pretty soft, so that ought to feel good when drying off.
-Cabinet/shelves- One of those shelf cabinets, with all sorts of bathroom supplies in it. Kinda boring, really.
-Mirror- There's me and everything else around me. Might have to freshen up again once I'm out.
-Book (?)- Dummies' Guide to Lockpicking. Most of it seems to be about using all kinds of different tools, but it doesn't fail to mention various improvised lockpicks.
+Blue ceramic cup- A small cup for water or maybe holding toothbrushes. I guess if I'm thristy I'll use it to have a drink.
+Blue ceramic pump bottle- A pump bottle, probably filled with liquid soap. If I need clean hands, I know where to turn.
+Blue towel stack- Some blue towels arranged neatly in a stack. They're fairly soft, too, so that's pretty nice.
+Bathtub- A nice bathtub, with some rose petals at the bottom for effect, for this one day only. A bath would be nice about now.
+Cabinet- One of those shelf cabinets, with all sorts of bathroom supplies in it. Kinda boring, really.
+Door- The way out of here, if only I had a key or something.
+Floor- It's... the floor. What do you want me to say about it? You walk on it, it's there.
+Handwash Stand- The sink, with the usual. No need to wash my hands now, but it's there if I need to.
 Key- An old-fashioned key. It probably fits the lock out of here... I hope, at least.
+Mirror- There's me and everything else around me. Might have to freshen up again once I'm out.
+Paper towels- Some paper towels, in case using the nice soft towels was too good.
+Rose petals- A few petals they put in here for Valentine's Day. They're probably not even real, but they're convincing enough.
+Rose- A fake rose I put together out of the rose petals. A rose by any other name would probably be more convincing, but it looks good enough.
+Rug- A rug laid out in front of the shower, for helping with drying feet and not getting the floor wet.
+Shower head- The source of nice, warm water for taking a shower.
+Shower- A shower, seperate from the bathtub for some reason. If I need to, I'll probably take another shower.
+Table- A little table, for laying out things like soaps and shampoo. Convinent, probably.
+Toilet paper- The good old TP. Not sure why people like throwing this at houses, it's not too hard to clean up.
+Toilet- Ah, the thinking throne. I already took care of my business on it, no need to do it again.
+Towel Dryer- (Not sure what this is)
+Towel Shelf- A weird shelf they have for laying the towels on. It'd probably serve as a nice bench to sit on, if I cleared it off.
+Towel stack- A set of nice, white towels. They feel pretty soft, so that ought to feel good when drying off.
+Trashcan- A can with a bunch of trash in it. There seems to been some left over, but not a whole lot.
+Window- The window to outside. I'm pretty high up, so going out that way will be a one-way trip to a pretty bad Valentine's Day.
