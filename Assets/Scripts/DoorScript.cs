@@ -1,14 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DoorScript : MonoBehaviour
 {
-
     public Transform playerCam;
+    public Canvas end;
+    public GameObject fps;
 
     [SerializeField]
     private float _distance;
+
+    private void Start()
+    {
+        end.enabled = false;
+    }
 
     void OnMouseDown()
     {
@@ -32,7 +39,9 @@ public class DoorScript : MonoBehaviour
         }
         else if (c.gameObject.name == "KeyCard")
         {
-            Debug.Log("Door opened!");
+            end.enabled = true;
+            Destroy(fps);
+            end.GetComponent<EndCanvasScript>().endText();
         }
     }
 }
