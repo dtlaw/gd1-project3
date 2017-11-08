@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-//using UnityEditor.
+using System.Collections.Generic;
 
 //Adapted from https://answers.unity.com/questions/22954/how-to-save-a-picture-take-screenshot-from-a-camer.html
 // Originally created by jashan
@@ -25,37 +25,25 @@ public class TakePhotos:MonoBehaviour {
     }
 
     public int SelfieScore() {
-        //if (!bath.GetComponent<Renderer>().isVisible) {
-        // print("NO____________________");
-        //} else {
-        // print("________________YES");
-        //}
-        //Camera.OnWillRenderObject()
-        //selfieCam.camera.on
-        //bath.renderer.
+        int score = 0;
 
-        Ray photoLine = new Ray();
-        RaycastHit hit = new RaycastHit();
-        photoLine.origin = transform.position;
-        photoLine.direction = Vector3.forward;
-
-        int score;
-        score = 10;
-
-        Vector3 forward = transform.TransformDirection(Vector3.forward) * 10;
-        Debug.DrawRay(transform.position, forward, Color.blue, 0, false);
-        //if (Physics.Raycast(transform.position, forward, 100) && inPhoto.transform.tag == "Furniture" ) {
-        //if (Physics.Raycast(photoLine, out inPhoto) && inPhoto.transform.tag == "Furniture") { 
-        print("running");
-        if (Physics.Raycast(transform.position, transform.forward, out hit, 10f)) { 
-            print ("raycast");
-            if(hit.transform != null) {
-                print("object -- " + hit.transform.tag);
+        // TODO: Actual list of scored objects
+        GameObject[] scoredObjects = GameObject.FindGameObjectsWithTag( "Scored" );
+        print( scoredObjects.Length );
+        var visibleObjects = new List< GameObject >();
+        Vector3 camPos = selfieCam.transform.position;
+        foreach ( GameObject g in scoredObjects ) {
+            Vector3 pos = selfieCam.WorldToScreenPoint( g.transform.position );
+            if ( pos.z > 0 && pos.x > 0 && pos.x < selfieCam.pixelWidth && pos.y > 0 && pos.y < selfieCam.pixelHeight ) {
+                RaycastHit hit;
+                Physics.Raycast( camPos, g.transform.position - camPos, out hit );
+                if ( hit.collider && hit.collider.gameObject == g ) {
+                    visibleObjects.Add( g );
+                    print( "Visible" );
+                }
             }
-        } else {
-            //print("not raycast");
         }
-        //Debug.DrawRay(photoLine, Color.cyan);
+
         return score;
     }
 
@@ -77,11 +65,13 @@ public class TakePhotos:MonoBehaviour {
             selfieCam.targetTexture = null;
             RenderTexture.active = null; // JC: added to avoid errors
             Destroy(rt);
-            byte[] bytes = screenShot.EncodeToPNG();
-            string filename = ScreenShotName(resWidth, resHeight);
-            System.IO.File.WriteAllBytes(filename, bytes);
-            Debug.Log(string.Format("Took screenshot to: {0}", filename));
+            // byte[] bytes = screenShot.EncodeToPNG();
+            // string filename = ScreenShotName(resWidth, resHeight);
+            // System.IO.File.WriteAllBytes(filename, bytes);
+            // Debug.Log(string.Format("Took screenshot to: {0}", filename));
             takeHiResShot = false;
+
+            SelfieScore();
         }
     }
 }
