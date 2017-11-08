@@ -1,30 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class DoorScript : MonoBehaviour {
-
+public class DoorScript : MonoBehaviour
+{
     public Transform playerCam;
+    public Canvas end;
+    public GameObject fps;
 
     [SerializeField]
     private float _distance;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        end.enabled = false;
     }
 
     void OnMouseDown()
     {
         _distance = Vector3.Distance(playerCam.transform.position, this.transform.position);
-        if (_distance < 1.0)
+        if (_distance > 8.0)
         {
             Debug.Log("The door won't open");
-        }
-        else
-        {
-            Debug.Log("***" + _distance);
         }
     }
 
@@ -39,9 +37,10 @@ public class DoorScript : MonoBehaviour {
         {
             Debug.Log("BANG! but the door holds");
         }
-        else if (c.gameObject.name == "Keycard")
+        else if (c.gameObject.name == "KeyCard")
         {
-            Debug.Log("Door opened!");
+            end.enabled = true;
+            end.GetComponent<EndCanvasScript>().endText();
         }
     }
 }

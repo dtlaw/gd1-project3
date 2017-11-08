@@ -1,10 +1,37 @@
 fileFormatVersion: 2
 guid: 1b79a1ba0144ff94094d87ad68129124
-timeCreated: 1510105406
-licenseType: Pro
+timeCreated: 1510128701
+licenseType: Free
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - cup: {fileID: 100000, guid: a182509c2a05e9d45a7d345fec4060c8, type: 3}
+  - soap: {fileID: 100002, guid: dbd04b1133a14e747b15f754f507b790, type: 3}
+  - towel: {fileID: 100000, guid: fa8faeceb4944ca4b9d535129f044ba3, type: 3}
+  - bath: {fileID: 100000, guid: 1adf07acb2bd57043a0ac61fe2bb0a15, type: 3}
+  - cabinet: {fileID: 100000, guid: 02d6a45ab03639840813cd4464107793, type: 3}
+  - door: {fileID: 100002, guid: 6ef5d4f44c718524e9fd282d10d12f79, type: 3}
+  - floor: {fileID: 100000, guid: 0b7930fd63713fb469d14b2bc05c6da2, type: 3}
+  - sink: {instanceID: 0}
+  - key: {fileID: 100000, guid: ea758239721969e42854dbb39654acb3, type: 3}
+  - mirror: {fileID: 100010, guid: acd8e0c8e61f809458041bf4ca74ca98, type: 3}
+  - paperTowel: {fileID: 100000, guid: c145c61610892a045a1f7d69232267f7, type: 3}
+  - petals: {fileID: 100000, guid: ba10692ceef2a7547a8a00fe7d6ba582, type: 3}
+  - rose: {fileID: 100000, guid: 88dc70868f377b64b9c25045eabd0ed3, type: 3}
+  - rug: {fileID: 100000, guid: 6b16a0b0b8a5e9d4cbcf77b6c0118d14, type: 3}
+  - rugSmall: {instanceID: 0}
+  - showerHead: {fileID: 100000, guid: fa337787432169a4d96318dd37f87df0, type: 3}
+  - shower: {fileID: 100004, guid: a2bbc0d615ebc824a81c57598a593c4c, type: 3}
+  - table: {fileID: 100002, guid: 1e10544608bce5c45927f290df1b4b16, type: 3}
+  - paper: {fileID: 100000, guid: 331afec8dab22ad45937adf318650658, type: 3}
+  - toilet: {fileID: 100002, guid: 081afe4ee7bbcb1479d1c3f0fe4a0467, type: 3}
+  - rack: {instanceID: 0}
+  - shelf: {instanceID: 0}
+  - stack: {instanceID: 0}
+  - bin: {fileID: 100004, guid: 4a3f7a5d20e06a143aa47eff9f6ff3c4, type: 3}
+  - window: {fileID: 100002, guid: 4e23539fcbbd07c4b9fe9e1e62c3f756, type: 3}
+  - player: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

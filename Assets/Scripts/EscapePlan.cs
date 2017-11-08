@@ -9,6 +9,7 @@ public class EscapePlan : MonoBehaviour {
     public int level;
     public UnityEngine.UI.Text list;
     public Text notification;
+    public GameObject player;
 
     //Set private variables
     private string listText;
@@ -22,6 +23,9 @@ public class EscapePlan : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //Check level
+        level = player.GetComponent<Items>().level;
+
         switch (level) {
             case 0:
                 listText = ("How to escape! \n" + "◯Try the Door \n");
@@ -39,13 +43,13 @@ public class EscapePlan : MonoBehaviour {
                 listText = ("How to escape! \n" + " ✔Try the Window \n" + "◯Take Selfie \n");
                 break;
             case 4:
-                listText = ("How to escape! \n" + " ✔Take Selfie \n" + "◯Try the Airvent \n");
+                listText = ("How to escape! \n" + " ✔Take Selfie \n" + "◯Use the table to get to the Airvent \n");
                 break;
             case 5:
                 listText = ("How to escape! \n" + " ✔Try the Airvent \n" + "◯Respond to Text \n");
                 break;
             case 6:
-                listText = ("How to escape! \n" + " ✔Respond to Text \n" + "◯Try looking the bin \n");
+                listText = ("How to escape! \n" + " ✔Respond to Text \n" + "◯Try looking the Bin \n");
                 break;
             case 7:
                 listText = ("How to escape! \n" + " ✔Try looking in the Bin \n" + "◯Take Selfie \n");
@@ -68,9 +72,9 @@ public class EscapePlan : MonoBehaviour {
     }
 
     public void CheckList () {
-        if (Input.GetKeyDown("space")) {
-            level += 1;
-        }
+        //if (Input.GetKeyDown("space")) {
+        //    level += 1;
+        //}
         //////////////
 
         if (level == 1) {
