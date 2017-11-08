@@ -44,7 +44,7 @@ public class Items : MonoBehaviour {
     //Define Variables
     private float distance;
     private GameObject close;
-
+    private bool openVent = false;
     private bool move;
 
     // Use this for initialization
@@ -81,6 +81,7 @@ public class Items : MonoBehaviour {
         if (level == 3 || level == 7) {
             if (Input.GetKeyDown("k")) {
                 move = true;
+                print("Photo taken");
             }
         }
 
@@ -133,11 +134,19 @@ public class Items : MonoBehaviour {
                     close = petals;
                 } else if (hit.transform.tag == "shower") {
                     close = shower;
-                } else if (hit.transform.tag == "table") {
+                } else if (hit.transform.tag == "Table") {
                     close = table;
+                    if (level == 4) {
+                        openVent = true;
+                        print("table");
+                    }
                 } else if (hit.transform.tag == "Vent") {
                     close = vent;
                     print("vent");
+                    if(level == 4 && openVent == true) {
+                        popUp.text = "I can't climb in there \n press enter";
+                        move = true;
+                    }
                 //} else if (hit.transform.tag == "toilet") {
                 //    close = toilet;
                 //} else if (hit.transform.tag == "rack") {
@@ -146,8 +155,12 @@ public class Items : MonoBehaviour {
                 //    close = shelf;
                 //} else if (hit.transform.tag == "plate") {
                 //    close = plate;
-                } else if (hit.transform.tag == "bin") {
+                } else if (hit.transform.tag == "Bin") {
                     close = bin;
+                    if (level == 6) {
+                        popUp.text = "Nothing in there \n press enter";
+                        move = true;
+                    }
                 } else if (hit.transform.tag == "Window") {
                     close = window;
                     print("window");
