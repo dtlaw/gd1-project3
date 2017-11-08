@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - PickUp
+  - Bath
   layers:
   - Default
   - TransparentFX

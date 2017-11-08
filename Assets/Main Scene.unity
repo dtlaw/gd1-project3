@@ -474,6 +474,43 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_PrefabInternal: {fileID: 787433697}
+--- !u!114 &251852520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 251852519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b79a1ba0144ff94094d87ad68129124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cup: {fileID: 0}
+  soap: {fileID: 0}
+  towel: {fileID: 0}
+  bath: {fileID: 0}
+  cabinet: {fileID: 0}
+  door: {fileID: 0}
+  floor: {fileID: 0}
+  sink: {fileID: 0}
+  key: {fileID: 0}
+  mirror: {fileID: 0}
+  paperTowel: {fileID: 0}
+  petals: {fileID: 0}
+  rose: {fileID: 0}
+  rug: {fileID: 0}
+  rugSmall: {fileID: 0}
+  showerHead: {fileID: 0}
+  shower: {fileID: 0}
+  table: {fileID: 0}
+  paper: {fileID: 0}
+  toilet: {fileID: 0}
+  rack: {fileID: 0}
+  shelf: {fileID: 0}
+  stack: {fileID: 0}
+  bin: {fileID: 0}
+  window: {fileID: 0}
+  player: {fileID: 0}
 --- !u!4 &251852523 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
@@ -4895,6 +4932,10 @@ Prefab:
       propertyPath: m_Name
       value: Bathroom
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7fabea27716245b4aa6a92362bfaee1a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7fabea27716245b4aa6a92362bfaee1a, type: 3}
   m_IsPrefabParent: 0
@@ -4998,6 +5039,10 @@ Prefab:
     - target: {fileID: 400000, guid: 1adf07acb2bd57043a0ac61fe2bb0a15, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1adf07acb2bd57043a0ac61fe2bb0a15, type: 3}
+      propertyPath: m_TagString
+      value: Bath
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1adf07acb2bd57043a0ac61fe2bb0a15, type: 3}

@@ -24,7 +24,6 @@ public class EscapePlan : MonoBehaviour {
 	void Update () {
         switch (level) {
             case 0:
-                print("Try to open the door");
                 listText = ("How to escape! \n" + "◯Try the Door \n");
                 
                 break;
