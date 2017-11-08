@@ -60,7 +60,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
             lockCursor = value;
             if(!lockCursor)
             {//we force unlock the cursor if the user disable the cursor locking helper
+<<<<<<< HEAD
                 Cursor.lockState = CursorLockMode.None;
+=======
+                Cursor.lockState = CursorLockMode.Locked;
+>>>>>>> 5f57ba6e02ef74af5ea70bfba09e5b42a533fd96
                 Cursor.visible = true;
             }
         }
@@ -74,6 +78,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void InternalLockUpdate()
         {
+<<<<<<< HEAD
             if(Input.GetKeyUp(KeyCode.Escape))
             {
                 m_cursorIsLocked = false;
@@ -93,6 +98,31 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
             }
+=======
+           // m_cursorIsLocked = true;
+            //Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = true;
+            ///*
+            if (Input.GetKeyUp(KeyCode.Escape)) {
+                m_cursorIsLocked = false;
+            }
+            else if(Input.GetMouseButtonUp(0)) {
+                m_cursorIsLocked = true;
+                //m_cursorIsLocked = false;
+            }
+
+            if (m_cursorIsLocked) {
+                Cursor.lockState = CursorLockMode.Locked;
+                //Cursor.visible = false;
+                //Cursor.lockState = CursorLockMode.None;
+                //Cursor.visible = true;
+            }
+            else if (!m_cursorIsLocked) {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
+            //*/
+>>>>>>> 5f57ba6e02ef74af5ea70bfba09e5b42a533fd96
         }
 
         Quaternion ClampRotationAroundXAxis(Quaternion q)
