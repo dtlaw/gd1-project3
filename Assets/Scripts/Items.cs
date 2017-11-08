@@ -30,50 +30,39 @@ public class Items : MonoBehaviour {
     public GameObject stack;
     public GameObject bin;
     public GameObject window;
+    public GameObject vent;
 
     public GameObject player;
+    public GameObject hand;
+
+    public GameObject eventSys;
 
     //Define Variables
     private float distance;
+    private GameObject close;
+    private int level;
 
     // Use this for initialization
     void Start() {
-
+        //Find where player is up to
+        
     }
 
     // Update is called once per frame
     void Update() {
-        CheckObject();
+        level = eventSys.GetComponent<EscapePlan>().level;
 
-    }
+        Vector3 forward = transform.TransformDirection(Vector3.forward) * 10;
+        Debug.DrawRay(transform.position, forward, Color.green, 0, false);
 
-    void OnMouseDown() {
-        //distance = Vector3.Distance(playerCam.transform.position, this.transform.position);
-        if (distance < 1.0) {
-            GetComponent<Rigidbody>().useGravity = false;
-            // this.transform.position = playerCam.position;
-            //this.transform.parent = GameObject.Find("FPSController").transform;
-            this.transform.parent = GameObject.Find("FirstPersonCharacter").transform;
-
-            // GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezePositionY;
-            // this.transform.SetPositionAndRotation(playerCam.position, playerCam.rotation);
-            //this.transform.Rotate(_x, _y, _z, Space.Self);
-
-            GetComponent<Rigidbody>().freezeRotation = true;
-            //_held = true;
-        } else {
-            //Debug.Log("***" + _distance);
+        if (Input.GetMouseButtonDown(0)) { 
+            print("click");
+            CheckObject();
         }
+
     }
 
-    void OnMouseUp() {
-        this.transform.parent = null;
-        GetComponent<Rigidbody>().useGravity = true;
-        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-        GetComponent<Rigidbody>().freezeRotation = false;
-        //_held = false;
-    }
-
+   
     void CheckObject() {
         Ray photoLine = new Ray();
         RaycastHit hit = new RaycastHit();
@@ -83,20 +72,60 @@ public class Items : MonoBehaviour {
 
         Vector3 forward = transform.TransformDirection(Vector3.forward) * 10;
         Debug.DrawRay(transform.position, forward, Color.green, 0, false);
-        //if (Physics.Raycast(transform.position, forward, 100) && inPhoto.transform.tag == "Furniture" ) {
-        //if (Physics.Raycast(photoLine, out inPhoto) && inPhoto.transform.tag == "Furniture") { 
-        print("green");
+        //distance = Vector3.Distance(close.transform.position, hand.transform.position);
+
         if (Physics.Raycast(transform.position, transform.forward, out hit, 10f)) {
-            print("raycast green");
+            //if (hit.transform != null && distance < 2f) {
             if (hit.transform != null) {
-                print("object -- " + hit);
                 if (hit.transform.tag == "Bath") {
                     print("HELL YEAH");
-                }
+                    close = bath;
+                //} else if (hit.transform.tag == "cup") {
+                //    close = cup;
+                    
+                //} else if (hit.transform.tag == "soap") {
+                //    close = soap;
+                } else if (hit.transform.tag == "Towel") {
+                    close = towel;
+                    print("this is not a cup");
+                //} else if (hit.transform.tag == "cabinet") {
+                //    close = cabinet;
+                } else if (hit.transform.tag == "door") {
+                    close = door;
+                    print("door");
+                //} else if (hit.transform.tag == "floor") {
+                //    close = floor;
+                //} else if (hit.transform.tag == "sink") {
+                //    close = sink;
+                } else if (hit.transform.tag == "key") {
+                    close = key;
+                } else if (hit.transform.tag == "petals") {
+                    close = petals;
+                } else if (hit.transform.tag == "shower") {
+                    close = shower;
+                } else if (hit.transform.tag == "table") {
+                    close = table;
+                } else if (hit.transform.tag == "Vent") {
+                    close = vent;
+                    print("vent");
+                //} else if (hit.transform.tag == "toilet") {
+                //    close = toilet;
+                //} else if (hit.transform.tag == "rack") {
+                //    close = rack;
+                //} else if (hit.transform.tag == "shelf") {
+                //    close = shelf;
+                //} else if (hit.transform.tag == "plate") {
+                //    close = plate;
+                } else if (hit.transform.tag == "bin") {
+                    close = bin;
+                } else if (hit.transform.tag == "window") {
+                    close = window;
+                } 
             }
         }
     }
-
 }
+
+
 
         
