@@ -5,6 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - PickUp
+  - Bath
+  - Towel
+  - Door
+  - Key
+  - Petals
+  - Shower
+  - Table
+  - Bin
+  - Window
+  - Vent
   layers:
   - Default
   - TransparentFX
