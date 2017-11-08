@@ -27,9 +27,12 @@ public class TakePhotos:MonoBehaviour {
     public int SelfieScore() {
         int score = 0;
 
-        // TODO: Actual list of scored objects
-        GameObject[] scoredObjects = GameObject.FindGameObjectsWithTag( "Scored" );
-        print( scoredObjects.Length );
+        // Get gameobjects that have scores components
+        ObjectScore[] temp = GameObject.FindObjectsOfType< ObjectScore >();
+        var scoredObjects = new GameObject[ temp.Length ];
+        for ( int i = 0; i < temp.Length; ++i ) {
+            scoredObjects[ i ] = temp[ i ].gameObject;
+        }
         var visibleObjects = new List< GameObject >();
         Vector3 camPos = selfieCam.transform.position;
         foreach ( GameObject g in scoredObjects ) {
@@ -54,14 +57,11 @@ public class TakePhotos:MonoBehaviour {
 
         if (takeHiResShot) {
             RenderTexture rt = new RenderTexture(resWidth, resHeight, 24);
-            //camera.targetTexture = rt;
             selfieCam.targetTexture = rt;
             Texture2D screenShot = new Texture2D(resWidth, resHeight, TextureFormat.RGB24, false);
-            //camera.Render();
             selfieCam.Render();
             RenderTexture.active = rt;
             screenShot.ReadPixels(new Rect(0, 0, resWidth, resHeight), 0, 0);
-            //camera.targetTexture = null;
             selfieCam.targetTexture = null;
             RenderTexture.active = null; // JC: added to avoid errors
             Destroy(rt);
