@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Items : MonoBehaviour {
 
@@ -36,21 +37,25 @@ public class Items : MonoBehaviour {
     public GameObject hand;
 
     public GameObject eventSys;
+    public Text popUp;
+    public int level;
+
 
     //Define Variables
     private float distance;
     private GameObject close;
-    private int level;
+
+    private bool move;
 
     // Use this for initialization
     void Start() {
-        //Find where player is up to
-        
+        move = false;
+        level = eventSys.GetComponent<EscapePlan>().level;
     }
 
     // Update is called once per frame
     void Update() {
-        level = eventSys.GetComponent<EscapePlan>().level;
+        //level = eventSys.GetComponent<EscapePlan>().level;
 
         Vector3 forward = transform.TransformDirection(Vector3.forward) * 10;
         Debug.DrawRay(transform.position, forward, Color.green, 0, false);
@@ -58,6 +63,10 @@ public class Items : MonoBehaviour {
         if (Input.GetMouseButtonDown(0)) { 
             print("click");
             CheckObject();
+        }
+        if (move == true && Input.GetKeyDown("return")) {
+            level += 1;
+            popUp.text = "";
         }
 
     }
@@ -94,6 +103,11 @@ public class Items : MonoBehaviour {
                 } else if (hit.transform.tag == "Door") {
                     close = door;
                     print("door");
+                    if (level == 0) {
+                        print("door is locked");
+                        popUp.text = "The Door is locked \n press enter";
+                        move = true;
+                    }
                 //} else if (hit.transform.tag == "floor") {
                 //    close = floor;
                 //} else if (hit.transform.tag == "sink") {

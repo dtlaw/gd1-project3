@@ -15,6 +15,7 @@ public class UI : MonoBehaviour {
     public GameObject mainCam;
     //Find other objects
     public UnityEngine.UI.Text timer;
+
     //Create timer
     private float timeLeft = 90.0f;
     //Check selfie cam
@@ -37,8 +38,10 @@ public class UI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        
+
         //Change Screen Modes
-		if (Input.GetKeyDown("t")) {
+        if (Input.GetKeyDown("t")) {
             OpenTwitter();
         }
         if (Input.GetKeyDown("c")) {
