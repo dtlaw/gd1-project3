@@ -29,14 +29,23 @@ public class EscapePlan : MonoBehaviour {
                 
                 break;
             case 1:
+<<<<<<< HEAD
+=======
+                print("level 1");
+>>>>>>> 5f57ba6e02ef74af5ea70bfba09e5b42a533fd96
                 notificationText = ("New Text!");
                 listText = ("How to escape! \n" + " ✔Try the Door \n" + "◯Respond to Text \n");
                 break;
             case 2:
+<<<<<<< HEAD
+=======
+                print("2");
+>>>>>>> 5f57ba6e02ef74af5ea70bfba09e5b42a533fd96
                 notificationText = ("");
                 listText = ("How to escape! \n" + " ✔Responded to Text \n" + "◯Try the Window \n");
                 break;
             case 3:
+<<<<<<< HEAD
                 listText = ("How to escape! \n" + " ✔Try the Window \n" + "◯Take Selfie \n");
                 break;
             case 4:
@@ -55,6 +64,37 @@ public class EscapePlan : MonoBehaviour {
                 listText = ("How to escape! \n" + " ✔ Take Selfie \n" + "◯Try the towels \n");
                 break;
             case 9:
+=======
+                print("3");
+                listText = ("How to escape! \n" + " ✔Try the Window \n" + "◯Take Selfie \n");
+
+                break;
+            case 4:
+                print("4");
+                listText = ("How to escape! \n" + " ✔Take Selfie \n" + "◯Try the Airvent \n");
+                break;
+            case 5:
+                print("5");
+                listText = ("How to escape! \n" + " ✔Try the window \n" + "◯Respond to Text \n");
+                break;
+            case 6:
+                print("6");
+                listText = ("How to escape! \n" + " ✔Try the airvent \n" + "◯Try looking the bin \n");
+                break;
+            case 7:
+                print("6");
+                listText = ("How to escape! \n" + " ✔Try the window \n" + "◯Respond to Text \n");
+                break;
+            case 8:
+                print("6");
+                listText = ("How to escape! \n" + " ✔Try looking in the bin \n" + "◯Try the towels \n");
+                break;
+            case 9:
+                print("6");
+                break;
+            case 10:
+                print("6");
+>>>>>>> 5f57ba6e02ef74af5ea70bfba09e5b42a533fd96
                 listText = ("How to escape! \n" + " ✔Try the towels \n" + "◯Open the door \n");
                 break;
             case 10:

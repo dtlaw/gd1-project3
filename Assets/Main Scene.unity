@@ -1957,8 +1957,13 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 442.00015, y: -268.51}
   m_SizeDelta: {x: 105.32, y: 144.78}
+=======
+  m_AnchoredPosition: {x: 442.00003, y: -251}
+  m_SizeDelta: {x: 100, y: 100}
+>>>>>>> 5f57ba6e02ef74af5ea70bfba09e5b42a533fd96
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &845023585
 MonoBehaviour:
@@ -1981,7 +1986,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+<<<<<<< HEAD
     m_FontSize: 26
+=======
+    m_FontSize: 28
+>>>>>>> 5f57ba6e02ef74af5ea70bfba09e5b42a533fd96
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -1992,10 +2001,18 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
+<<<<<<< HEAD
   m_Text: 'T to text
 
 
     C for Camera'
+=======
+  m_Text: 'Press
+
+    T
+
+    to text'
+>>>>>>> 5f57ba6e02ef74af5ea70bfba09e5b42a533fd96
 --- !u!222 &845023586
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3320,9 +3337,15 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1377240577}
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
+=======
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2.2206485}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+>>>>>>> 5f57ba6e02ef74af5ea70bfba09e5b42a533fd96
   m_Children:
   - {fileID: 1213873587}
   m_Father: {fileID: 1349295421}
