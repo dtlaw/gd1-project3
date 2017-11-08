@@ -2,39 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TowelScript : MonoBehaviour
+public class TableScript : MonoBehaviour
 {
     public Transform playerCam;
-    public GameObject key;
 
     [SerializeField]
     private float _distance;
-    private bool _held = false;
-    private bool _keyDropped = false;
     private float _x = 0.0f;
-    private float _y = 90.0f;
+    private float _y = 180.0f;
     private float _z = 0.0f;
-
-    private void Start()
-    {
-        if (key)
-        key.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (_held && !_keyDropped)
-        {
-            _keyDropped = true;
-            key.SetActive(true);
-        }
-    }
 
     void OnMouseDown()
     {
         _distance = Vector3.Distance(playerCam.transform.position, this.transform.position);
-        if (_distance < 2.5)
+        if (_distance < 2.0)
         {
             GetComponent<Rigidbody>().useGravity = false;
             this.transform.position = playerCam.position;
@@ -45,7 +26,6 @@ public class TowelScript : MonoBehaviour
             this.transform.Rotate(_x, _y, _z, Space.Self);
 
             GetComponent<Rigidbody>().freezeRotation = true;
-            _held = true;
         }
     }
 
@@ -55,6 +35,5 @@ public class TowelScript : MonoBehaviour
         GetComponent<Rigidbody>().useGravity = true;
         GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         GetComponent<Rigidbody>().freezeRotation = false;
-        _held = false;
     }
 }

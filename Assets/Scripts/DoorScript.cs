@@ -40,7 +40,6 @@ public class DoorScript : MonoBehaviour
         else if (c.gameObject.name == "KeyCard")
         {
             end.enabled = true;
-            Destroy(fps);
             end.GetComponent<EndCanvasScript>().endText();
         }
     }
