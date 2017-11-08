@@ -88,11 +88,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 m_cursorIsLocked = true;
             }*/
 =======
-<<<<<<< HEAD
->>>>>>> 390567b8b886df9835c3de9485a5514ce2e3796c
-=======
 >>>>>>> 5f8c8e481cf7dcc3a7ffc0f4d94d4d68deb8d3ae
->>>>>>> b3f5e894d9db50e5e0e38e16844e9be10b23480a
             else if(Input.GetMouseButtonUp(0))
             {
                 m_cursorIsLocked = true;
@@ -106,11 +102,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 Cursor.visible = true;
 =======
                 Cursor.visible = false;
-<<<<<<< HEAD
->>>>>>> 390567b8b886df9835c3de9485a5514ce2e3796c
-=======
 >>>>>>> 5f8c8e481cf7dcc3a7ffc0f4d94d4d68deb8d3ae
->>>>>>> b3f5e894d9db50e5e0e38e16844e9be10b23480a
             }
             else if (!m_cursorIsLocked)
             {

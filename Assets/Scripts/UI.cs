@@ -15,6 +15,7 @@ public class UI : MonoBehaviour {
     public GameObject mainCam;
     //Find other objects
     public UnityEngine.UI.Text timer;
+
     //Create timer
     private float timeLeft = 90.0f;
     //Check selfie cam
@@ -37,8 +38,10 @@ public class UI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        
+
         //Change Screen Modes
-		if (Input.GetKeyDown("t")) {
+        if (Input.GetKeyDown("t")) {
             OpenTwitter();
         }
         if (Input.GetKeyDown("c")) {
@@ -72,7 +75,6 @@ public class UI : MonoBehaviour {
         mainCam.SetActive(true);
         selfieCam.SetActive(false);
         isMainCam = true;
-        Cursor.lockState = CursorLockMode.None;
     }
 
     void OpenSnapchat() {
@@ -86,7 +88,8 @@ public class UI : MonoBehaviour {
         mainCam.SetActive(false);
         selfieCam.SetActive(true);
         isMainCam = false;
-        Cursor.lockState = CursorLockMode.Locked;
+
+        //if(body.Renderer.isVisible)
     }
 
     void OpenMain() {
@@ -100,7 +103,6 @@ public class UI : MonoBehaviour {
         mainCam.SetActive(true);
         selfieCam.SetActive(false);
         isMainCam = true;
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void EndGame() {
