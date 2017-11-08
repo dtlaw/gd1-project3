@@ -79,9 +79,16 @@ public class Items : MonoBehaviour {
 
         /////Photo
         if (level == 3 || level == 7) {
-            if (Input.GetKeyDown("k")) {
+            print("photo time");
+            if (Input.GetKeyDown("c")) {
+                popUp.text = "Press Enter";
                 move = true;
                 print("Photo taken");
+            }
+            if (Input.GetKeyDown("return")) {
+                //popUp.text = "Press Enter";
+                move = true;
+                print("not photo");
             }
         }
 
@@ -106,14 +113,24 @@ public class Items : MonoBehaviour {
                 if (hit.transform.tag == "Bath") {
                     print("HELL YEAH");
                     close = bath;
-                //} else if (hit.transform.tag == "cup") {
-                //    close = cup;
-                    
-                //} else if (hit.transform.tag == "soap") {
-                //    close = soap;
+                    //} else if (hit.transform.tag == "cup") {
+                    //    close = cup;
+
+                    //} else if (hit.transform.tag == "soap") {
+                    //    close = soap;
                 } else if (hit.transform.tag == "Towel") {
                     close = towel;
-                    print("this is not a cup");
+                    if (level == 8) {
+                        popUp.text = "Did something fall out? \n Press Enter";
+                        move = true;
+                    }
+                }else if (hit.transform.tag == "TowelCard") {
+                    close = towel;
+                    if (level == 8) {
+                        popUp.text = "Did something fall out? \n Press Enter";
+                        move = true;
+                }
+
                 //} else if (hit.transform.tag == "cabinet") {
                 //    close = cabinet;
                 } else if (hit.transform.tag == "Door") {
@@ -156,6 +173,7 @@ public class Items : MonoBehaviour {
                 //} else if (hit.transform.tag == "plate") {
                 //    close = plate;
                 } else if (hit.transform.tag == "Bin") {
+                    print("bins");
                     close = bin;
                     if (level == 6) {
                         popUp.text = "Nothing in there \n press enter";

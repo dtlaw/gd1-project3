@@ -49,7 +49,7 @@ public class EscapePlan : MonoBehaviour {
                 listText = ("How to escape! \n" + " ✔Try the Airvent \n" + "◯Respond to Text \n");
                 break;
             case 6:
-                listText = ("How to escape! \n" + " ✔Respond to Text \n" + "◯Try looking the bin \n");
+                listText = ("How to escape! \n" + " ✔Respond to Text \n" + "◯Try looking the Bin \n");
                 break;
             case 7:
                 listText = ("How to escape! \n" + " ✔Try looking in the Bin \n" + "◯Take Selfie \n");
