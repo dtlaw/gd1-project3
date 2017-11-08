@@ -67,6 +67,21 @@ public class Items : MonoBehaviour {
         if (move == true && Input.GetKeyDown("return")) {
             level += 1;
             popUp.text = "";
+            move = false;
+        }
+
+        /////TEXTING
+        if (level == 1 || level == 5) {
+            if (Input.GetKeyDown("t")) {
+                move = true;
+            }
+        }
+
+        /////Photo
+        if (level == 3 || level == 7) {
+            if (Input.GetKeyDown("k")) {
+                move = true;
+            }
         }
 
     }
@@ -133,8 +148,13 @@ public class Items : MonoBehaviour {
                 //    close = plate;
                 } else if (hit.transform.tag == "bin") {
                     close = bin;
-                } else if (hit.transform.tag == "window") {
+                } else if (hit.transform.tag == "Window") {
                     close = window;
+                    print("window");
+                    if (level == 2) {
+                        popUp.text = "The Window is too high up \n press enter";
+                        move = true;
+                    }
                 } 
             }
         }
