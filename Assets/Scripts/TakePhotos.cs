@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-//using UnityEditor.
+using System.Collections.Generic;
 
 //Adapted from https://answers.unity.com/questions/22954/how-to-save-a-picture-take-screenshot-from-a-camer.html
 // Originally created by jashan
@@ -29,11 +29,24 @@ public class TakePhotos:MonoBehaviour {
         score = 10;
         //Camera.OnWillRenderObject()
         //selfieCam.camera.on
-        //bath.renderer.
-        Vector3 forward = transform.TransformDirection(Vector3.forward);
-        if (Physics.Raycast(transform.position, forward, 10)) {
-            print ("visible");
+
+        // TODO: Actual list of scored objects
+        GameObject[] scoredObjects = GameObject.FindGameObjectsWithTag( "Scored" );
+        print( scoredObjects.Length );
+        var visibleObjects = new List< GameObject >();
+        Vector3 camPos = selfieCam.transform.position;
+        foreach ( GameObject g in scoredObjects ) {
+            Vector3 pos = selfieCam.WorldToScreenPoint( g.transform.position );
+            if ( pos.z > 0 && pos.x > 0 && pos.x < selfieCam.pixelWidth && pos.y > 0 && pos.y < selfieCam.pixelHeight ) {
+                RaycastHit hit;
+                Physics.Raycast( camPos, g.transform.position - camPos, out hit );
+                if ( hit.collider && hit.collider.gameObject == g ) {
+                    visibleObjects.Add( g );
+                    print( "Visible" );
+                }
+            }
         }
+
         return score;
     }
 
@@ -53,11 +66,13 @@ public class TakePhotos:MonoBehaviour {
             selfieCam.targetTexture = null;
             RenderTexture.active = null; // JC: added to avoid errors
             Destroy(rt);
-            byte[] bytes = screenShot.EncodeToPNG();
-            string filename = ScreenShotName(resWidth, resHeight);
-            System.IO.File.WriteAllBytes(filename, bytes);
-            Debug.Log(string.Format("Took screenshot to: {0}", filename));
+            // byte[] bytes = screenShot.EncodeToPNG();
+            // string filename = ScreenShotName(resWidth, resHeight);
+            // System.IO.File.WriteAllBytes(filename, bytes);
+            // Debug.Log(string.Format("Took screenshot to: {0}", filename));
             takeHiResShot = false;
+
+            SelfieScore();
         }
     }
 }
