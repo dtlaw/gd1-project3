@@ -6,17 +6,6 @@ TagManager:
   tags:
   - PickUp
   - Bath
-  - Towel
-  - Shower
-  - Cup
-  - Cake
-  - Bin
-  - Petals
-  - Vent
-  - Window
-  - Door
-  - Key
-  - Table
   layers:
   - Default
   - TransparentFX
