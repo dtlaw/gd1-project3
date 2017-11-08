@@ -81,7 +81,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Hello World!
 
-    I''m a multiline Chirp!
+    I''m a multiline text!
 
     Look at me!'
 --- !u!114 &114149974820097970

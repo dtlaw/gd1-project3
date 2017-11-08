@@ -35,9 +35,9 @@ public class MessageController : MonoBehaviour {
 	public void SelectMessage( int index ) {
 		GameObject m = Instantiate( _messagePrefab, _messageThread );
 		m.GetComponentInChildren< Text >().text = _currentEvent.Options[ index ].FullText;
-		m.GetComponent< Transform >().SetSiblingIndex( 0 );
+		// m.GetComponent< Transform >().SetSiblingIndex( 0 );
 
-		// TODO: Lerp-scroll to top when new message is added?
+		// TODO: Lerp-scroll to bottom when new message is added?
 	}
 
 
