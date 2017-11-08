@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [ CreateAssetMenu ]
-public class ChirpEvent : ScriptableObject {
+public class TextEvent : ScriptableObject {
 
 	// Types
 	[ System.Serializable ]
-	public struct ChirpOption {
+	public struct TextOption {
 		[ SerializeField ]
-		private string _hashtagText;
-		public string HashtagText { get { return _hashtagText; }}
+		private string _shortText;
+		public string HashtagText { get { return _shortText; }}
 		[ SerializeField ]
 		private string _fullText;
 		public string FullText { get { return _fullText; }}
@@ -22,6 +22,6 @@ public class ChirpEvent : ScriptableObject {
 
 	// Exposed variables
 	[ SerializeField ]
-	private ChirpOption[] _options = new ChirpOption[ 3 ];
-	public ChirpOption[] Options { get { return _options; }}
+	private TextOption[] _options = new TextOption[ 3 ];
+	public TextOption[] Options { get { return _options; }}
 }
