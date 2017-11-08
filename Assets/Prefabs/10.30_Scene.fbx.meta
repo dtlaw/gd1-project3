@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: 74ea7c39fa3476f4d86d1ac88f9a6afd
-timeCreated: 1509856903
+guid: 7fabea27716245b4aa6a92362bfaee1a
+timeCreated: 1509555607
 licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
     4300000: pCube1
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Interior
-    second: {fileID: 2100000, guid: b2f8acacb23ef4940b29a0bbf712ac29, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Interior_Trans
-    second: {fileID: 2100000, guid: e1181520bd8a9b54987236d0421a467b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -38,7 +26,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5

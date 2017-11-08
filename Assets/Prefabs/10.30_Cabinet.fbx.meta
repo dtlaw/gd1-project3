@@ -1,26 +1,19 @@
 fileFormatVersion: 2
-guid: d2af337e12eb0b0408ccc3b83be234a8
-timeCreated: 1509856922
+guid: 2a1c40c2518e5bb4c9ab3d1040d99003
+timeCreated: 1509555606
 licenseType: Free
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 21
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
     4300000: pCube2
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Cab
-    second: {fileID: 2100000, guid: 40400aef1c8acb94e92fb5bf8e970b28, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -33,7 +26,6 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
-    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
